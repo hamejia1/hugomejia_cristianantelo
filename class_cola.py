@@ -33,11 +33,11 @@ class Cola:
             return None
         return self.frente.dato
     
-    def __str_(self):
+    def __str__(self):
         elementos = []
         actual = self.frente
         while actual:
-            elementos.appennd(str(actual.dato))
+            elementos.append(str(actual.dato))
             actual = actual.siguiente
         return "Cola: " + " -> ".join(elementos)
 
