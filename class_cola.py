@@ -32,3 +32,11 @@ class Cola:
         if self.esta_vacia():
             return None
         return self.frente.dato
+    
+    def __str_(self):
+        elementos = []
+        actual = self.frente
+        while actual:
+            elementos.appennd(str(actual.dato))
+            actual = actual.siguiente
+        return "Cola: " + " -> ".join(elementos)
