@@ -18,3 +18,12 @@ class Cola:
         else:
             self.final.siguiente = nuevo_nodo
             self.final = nuevo_nodo
+
+    def desencolar(self):
+        if self.esta_vacia():
+            return None
+        dato = self.frente.dato
+        self.frente = self.frente.siguiente
+        if self.frente is None:
+            self.final = None
+        return dato
