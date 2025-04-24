@@ -27,3 +27,8 @@ class Cola:
         if self.frente is None:
             self.final = None
         return dato
+
+    def ver_primero(self):
+        if self.esta_vacia():
+            return None
+        return self.frente.dato
