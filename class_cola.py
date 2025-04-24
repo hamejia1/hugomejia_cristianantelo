@@ -40,3 +40,15 @@ class Cola:
             elementos.appennd(str(actual.dato))
             actual = actual.siguiente
         return "Cola: " + " -> ".join(elementos)
+
+cola = Cola()
+
+cola.encolar("Persona 1")
+cola.encolar("Persona 2")
+cola.encolar("Persona 3")
+
+print(cola)  
+
+print("Atendiendo:", cola.desencolar())  
+print("Siguiente:", cola.ver_primero())  
+print("¿Vacía?", cola.esta_vacia())
