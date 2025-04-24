@@ -11,3 +11,10 @@ class Cola:
     def esta_vacia(self):
         return self.frente is None
 
+    def encolar(self, dato):
+        nuevo_nodo = Nodo(dato)
+        if self.esta_vacia():
+            self.frente = self.final = nuevo_nodo
+        else:
+            self.final.siguiente = nuevo_nodo
+            self.final = nuevo_nodo
